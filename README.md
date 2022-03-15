@@ -21,7 +21,9 @@ A muy grandes rasgos, el programa:
 
 ### El método de Newton
 Para explicar por qué realizamos cada paso, primero vamos a explicar brevemente el Método de Newton: es un algoritmo recursivo que permite obtener las raíces de una función si conocemos únicamente la regla de correspondencia, la derivada y una aproximación inicial, denotada $x_0$. Si $x_n$ es nuestra aproximación actual, la regla para calcular la siguiente aproximación ($x_{n+1}$) es la siguiente:
-$$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}. $$
+
+![equation](https://latex.codecogs.com/svg.image?x_{n&plus;1}&space;=&space;x_n&space;-&space;\frac{f(x_n)}{f'(x_n)}.)
+
 Básicamente, lo que el método nos dice es que, dado un punto en el eje $x$, podemos "acercarnos" a la raíz de una función si evaluamos ese punto en la función, tomamos la pendiente en el resultado y, siguiendo la pendiente, avanzamos hasta llegar al eje de las abscisas; el punto en donde crucemos al eje será nuestra nueva aproximación. Este proceso está muy bien ilustrado en la siguiente animación:
 
 ![Animación del Método de Newton](imgs/newtonsMethod.gif)
