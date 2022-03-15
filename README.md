@@ -22,7 +22,7 @@ A muy grandes rasgos, el programa:
 ### El método de Newton
 Para explicar por qué realizamos cada paso, primero vamos a explicar brevemente el Método de Newton: es un algoritmo recursivo que permite obtener las raíces de una función si conocemos únicamente la regla de correspondencia, la derivada y una aproximación inicial, denotada $x_0$. Si $x_n$ es nuestra aproximación actual, la regla para calcular la siguiente aproximación ($x_{n+1}$) es la siguiente:
 
-![equation](https://latex.codecogs.com/svg.image?x_{n&plus;1}&space;=&space;x_n&space;-&space;\frac{f(x_n)}{f'(x_n)}.)
+$$ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}. $$
 
 Básicamente, lo que el método nos dice es que, dado un punto en el eje $x$, podemos "acercarnos" a la raíz de una función si evaluamos ese punto en la función, tomamos la pendiente en el resultado y, siguiendo la pendiente, avanzamos hasta llegar al eje de las abscisas; el punto en donde crucemos al eje será nuestra nueva aproximación. Este proceso está muy bien ilustrado en la siguiente animación:
 
@@ -32,9 +32,15 @@ Ahora bien, los más matemáticamente inclinados se habrán preguntado ya: ¿qu�
 
 ![Tres raíces](imgs/grafica_tres_raices.png)
 
-Hagamos algo más interesante: ¿qué pasa si empezamos entre $M_1$ y $M_2$? ¡Es un caos! Puede que terminemos en cualquiera de las tres raíces. Para no dejar al lector con la imaginación volando, vamos a colorear a todos los puntos que nos lleven a $r_1$ de color azul, a los que nos lleven a $r_2$ de rojo y a los que nos lleven a $r_3$ de verde. Podemos esperar que todos los puntos a la izquierda de $M_1$ se vean azules y todos los puntos a la derecha de $M_2$ se vean verdes. Así pues, fijémonos en lo que pasa en medio:
+Hagamos algo más interesante: ¿qué pasa si empezamos entre $M_1$ y $M_2$? ¡Es un caos! Puede que terminemos en cualquiera de las tres raíces. Para no dejar al lector con la imaginación volando, vamos a colorear a todos los puntos que nos lleven a $r_1$ de color azul, a los que nos lleven a $r_2$ de rojo y a los que nos lleven a $r_3$ de verde. Podemos esperar que todos los puntos a la izquierda de $M_1$ se vean azules y todos los puntos a la derecha de $M_2$ se vean verdes. Así pues, fijémonos en lo que pasa en medio: el comportamiento en las zonas cercanas a -0.5 y a 0.5 es precisamente el comportamiento que queremos mostrar: fractal.
 
 ![Colores de las cuencas de atracción](imgs/colores.png)
+
+El brinco más grande que vamos a dar aquí es que, en vez de evaluar una función con números reales, la evaluaremos con números complejos. Entonces $x_0$, nuestro punto inicial, no va a ser un número del eje $x$, sino un punto del plano complejo. El método sigue siendo el mismo y, además, también se cumple que distintos puntos iniciales nos llevarán a distintas raíces. Tomemos, por ejemplo, al polinomio $f(z) = z^3 - 1$. Como es de grado tres, entonces tiene tres raíces (reales o complejas). Si tomamos a los puntos del plano complejo como puntos iniciales del Método de Newton y los coloreamos según la raíz en la que terminan, obtenemos, finalmente, un fractal:
+
+![fractal](imgs/fractal.png)
+
+Lo único que nos queda por cambiar, pues, es la función que vamos evaluando y la parte del plano complejo en la que nos vamos fijando (podemos acercarnos, alejarnos o movernos). Para eso es el programa; para que el lector juegue y se divierta.
 
 ## Referencias
 - [GIF de Animación del Método de Newton](https://commons.wikimedia.org/wiki/File:NewtonIteration_Ani.gif)
