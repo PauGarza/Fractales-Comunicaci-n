@@ -11,7 +11,7 @@ La mejor manera de explicarlo es enseñando algunas fotos:
 
 ### Uso
 
-## ¿Cómo funciona el programa?
+## Construcción del programa
 
 A muy grandes rasgos, el programa:
 1. calcula las raíces de la función que le pasamos como argumento;
