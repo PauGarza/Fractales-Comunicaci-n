@@ -1,5 +1,7 @@
 # Fractales de Newton
 
+Este repocitiorio contiene código en Matlab para la creación de fractales mediante el método de Newton a partir de una función compleja.
+
 ## Introducción a fractales
 
 ### ¿Qué es un fractal?
@@ -16,9 +18,7 @@ Hay varias maneras de modelar un fractal, en este caso utilizamos el método de 
 
 ![Ejemplo de fractales de Newton](imgs/gr%C3%A1ficas_fractales.png)
 
-
-
-## ¿Cómo usar el programa? (pau)
+## Utilización del programa 
 
 ### Instalación
 
