@@ -1,9 +1,22 @@
 # Fractales de Newton
 
-## ¿Qué hace el programa? (pau)
+## Introducción a fractales
 
-### Primero que nada: ¿qué es un fractal?
-La mejor manera de explicarlo es enseñando algunas fotos:
+### ¿Qué es un fractal?
+
+Un fractal es una imagen que muestra porcesos iterativos que se repiten al infinito; es una figura autosemejante, es decir, es una figura que se parece a cada parte que la compone a diferentes escalas. 
+
+En la naturaleza podemos observar diferentes fractales. Las hojas de un helecho, las nubes, el sistema circulatorio, las líneas costeras​ o los copos de nieve son fractales naturales.
+
+![Ejemplo de fractales en la naturaleza](imgs/fractales_naturaleza.jpg)
+
+### ¿Cómo modelar un fractal?
+
+Hay varias maneras de modelar un fractal, en este caso utilizamos el método de Newton, por eso el nombre de Fractales de Newton. Caley fue el matemático que propuso utilizar el método de Newton para encontrar raíces de una función definida en el plano complejo. Caley analizó las cuencas de atracción que son el conjunto de puntos en el plano complejo tales que si aplicas el método de convergencia de Newton convergen a una raíz determinada. Al colorear las diferentes cuencas de atracción de una función compleja de diferentes colores podemos observar un fractal.
+
+![Ejemplo de fractales de Newton](imgs/gr%C3%A1ficas_fractales.png)
+
+
 
 ## ¿Cómo usar el programa? (pau)
 
