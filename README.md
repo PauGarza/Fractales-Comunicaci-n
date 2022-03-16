@@ -20,7 +20,9 @@ Hay varias maneras de modelar un fractal, en este caso utilizamos el método de 
 
 ## Utilización del programa 
 
-### Instalación
+### Requisitos
+
+- Todos los archivos del directorio ´src/´ debe estar en el directorio de trabajo de Matlab.
 
 ### Uso
 
