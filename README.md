@@ -8,13 +8,13 @@ Este repocitiorio contiene código en Matlab para la creación de fractales medi
 
 Un fractal es una imagen que muestra porcesos iterativos que se repiten al infinito; es una figura autosemejante, es decir, es una figura que se parece a cada parte que la compone a diferentes escalas. 
 
-En la naturaleza podemos observar diferentes fractales. Las hojas de un helecho, las nubes, el sistema circulatorio, las líneas costeras​ o los copos de nieve son fractales naturales.
+En la naturaleza podemos observar diferentes fractales. Las hojas de un helecho, las nubes, el sistema circulatorio, las líneas costeras​ o los copos de nieve son fractales en la naturaleza.
 
 ![Ejemplo de fractales en la naturaleza](imgs/fractales_naturaleza.jpg)
 
 ### ¿Cómo modelar un fractal?
 
-Hay varias maneras de modelar un fractal, en este caso utilizamos el método de Newton, por eso el nombre de Fractales de Newton. Caley fue el matemático que propuso utilizar el método de Newton para encontrar raíces de una función definida en el plano complejo. Caley analizó las cuencas de atracción que son el conjunto de puntos en el plano complejo tales que si aplicas el método de convergencia de Newton convergen a una raíz determinada. Al colorear las diferentes cuencas de atracción de una función compleja de diferentes colores podemos observar un fractal.
+Hay varias maneras de modelar un fractal, en este caso utilizamos el método de Newton. Caley fue el matemático que propuso utilizar el método de Newton para encontrar raíces de una función definida en el plano complejo. Caley define las cuencas de atracción como el conjunto de puntos en el plano complejo tales que si aplicas el método de convergencia de Newton convergen a una raíz determinada. Al colorear las diferentes cuencas de atracción de una función compleja de diferentes colores podemos observar un fractal.
 
 ![Ejemplo de fractales de Newton](imgs/gr%C3%A1ficas_fractales.png)
 
@@ -22,9 +22,35 @@ Hay varias maneras de modelar un fractal, en este caso utilizamos el método de 
 
 ### Requisitos
 
-- Todos los archivos del directorio ´src/´ debe estar en el directorio de trabajo de Matlab.
+- Todos los archivos del directorio `src/` deben estar en el directorio de trabajo de Matlab.
+- Es necesario tener __Symbolic Toolbox__ instalado en Matlab.
 
 ### Uso
+
+Para generar un fractal solo necesitas una función/polinomio complejo, su derivada, los límites en el plano complejo en el que quieres visualizar el fractal y el número de puntos que quieres gráficar, es decir, la resolución.
+
+Ejemplo:
+```matlab
+%Polinomio de grado 3
+f = @(z) z.^3-1;  
+df = @(z) 3*z.^2;
+lims = [-1 1 -1 1];
+res = 1000;
+```
+
+El archivo ejecutable del programa es `fractales.m`. Al correr este archivo en Matlab se generan las graficas de los fractales usando la función de `fractalNewton` o `fractalReal` con los parámetros indicados.
+
+Ejemplo:
+```matlab
+fractalNewton(f, df, lims, res);
+```
+
+ En el archivo se encuentran varios ejemplos de fractales en código comentado. Para visualizar la grafica de dichos ejemplos solo se debe descomentar el código.
+
+ Los archivos de apoyo son: 
+- `fractalNewton.m`, contiene la función que genera fractales de funciones complejas.
+- `fractalReal.m`, aquí se encuentra la función que grafica cuencas de atracción de funciones reales.
+- `metodoNewtonRaices`, tiene eñ método de convergencia que se utiliza en `fractalNewton.m`
 
 ## Construcción del programa
 
