@@ -1,6 +1,6 @@
 # Fractales de Newton
 
-Este repocitiorio contiene código en Matlab para la creación de fractales mediante el método de Newton a partir de una función compleja.....
+Este repocitiorio contiene código en Matlab para la creación de fractales mediante el método de Newton a partir de una función compleja.
 
 ## Introducción a fractales
 
