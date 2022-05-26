@@ -116,5 +116,5 @@ fractalNewton(f, df, lims, res);
 - `metodoNewtonRaices` - tiene en método de convergencia que se utiliza en `fractalNewton.m`
 
 
-## <a name="3"></a>4 Referencias
+## <a name="4"></a>4 Referencias
 - [Ejemplo de fractales en la naturaleza](https://twitter.com/cajafresca/status/1005094073668161536)
