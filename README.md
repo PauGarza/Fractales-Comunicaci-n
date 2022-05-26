@@ -3,21 +3,21 @@
 Programa que crea fractales a partir del método Newton en MATLAB.
 
 ## Índice
-- 1. Introducción a fractales
+- 1 Introducción a fractales
   - 1.1 ¿Qué es un fractal?
   - 1.2 ¿Cómo modelar un fractal?
-- 2. Construcción del programa
+- 2 Construcción del programa
   - 2.1 Cálculo de raíces de la función
   - 2.2 Grid que funciona como el campo complejo
   - 2.3 Método de Newton para cada punto
   - 2.4 Asignación de un color a cada punto
   - 2.5 Gráfica
-- 3. Utilización del programa
+- 3 Utilización del programa
   - 3.1 Requisitos
   - 3.2 Uso
-- 4. Referencias
+- 4 Referencias
 
-## 1. Introducción a fractales
+## 1 Introducción a fractales
 
 ### 1.1 ¿Qué es un fractal?
 
@@ -34,7 +34,7 @@ Este programa se basa en el trabajo de Caley. Este matemático utilizó el méto
 ![Ejemplo de fractales de Newton](imgs/gr%C3%A1ficas_fractales.png)
 
 
-## 2. Construcción del programa
+## 2 Construcción del programa
 
 ### 2.1 Cálculo de raíces de la función
 Para obtenerlas, el programa utiliza el cálculo simbólico de Matlab y almacena los resultados en un arreglo. También guarda el número de raíces que hay.
@@ -79,7 +79,7 @@ set(gca, 'XTick', linspace(lims(1), lims(2), 5));
 set(gca, 'YTick', linspace(lims(3), lims(4), 5));
 ```
 
-## 3. Utilización del programa 
+## 3 Utilización del programa 
 
 ### 3.1 Requisitos
 
@@ -116,5 +116,5 @@ fractalNewton(f, df, lims, res);
 - `metodoNewtonRaices` - tiene en método de convergencia que se utiliza en `fractalNewton.m`
 
 
-## 4. Referencias
+## 4 Referencias
 - [Ejemplo de fractales en la naturaleza](https://twitter.com/cajafresca/status/1005094073668161536)
